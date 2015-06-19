@@ -1,0 +1,14 @@
+//Less Hat mixin library
+@import "../lib/lesshat.less";
+
+@font-name: 'WalkwaySemiBoldRegular';
+@font-file: 'fonts/Walkway_SemiBold-webfont';
+
+@font-face {
+    .font-face(@font-name, @font-file);
+}
+
+.embeddedFont() {
+    font-family: @font-name, Verdana,sans-serif;
+}
+

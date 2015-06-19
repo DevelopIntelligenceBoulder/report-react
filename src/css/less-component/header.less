@@ -1,0 +1,107 @@
+//Less Hat mixin library
+@import "variable.less";
+@import "font.less";
+
+/* Header rules */
+header {
+    .embeddedFont;
+    background-color: @brand-primary;
+    border-bottom: 1px solid @brand-primary;
+    color: @light-text;
+    margin-top: 0;
+
+    h1 {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    nav {
+        border-top: 1px dotted @darken;
+        display: none;
+
+        ul {
+            padding: 0;
+        }
+
+        a {
+            display: block;
+        }
+    }
+
+    span {
+        color: @gray-text;
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    time {
+        background-color: @darken;
+        border-radius: 0.4em;
+        border: 1px solid white;
+        display: block;
+        font-size: 0.75rem;
+        margin: 0 0 1em 1em;
+        padding: 0.2em 1em;
+        text-align: center;
+        width: 10em;
+    }
+
+    .fa {
+        color: #fff;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 592px) {
+    header {
+
+        nav {
+            display: none;
+        }
+
+        span {
+            display: inline;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 704px) {
+    header {
+
+        span {
+            font-size: 1.75rem;
+        }
+
+        .fa {
+            display: none;
+        }
+
+        nav {
+            display: block !important;
+
+            ul {
+                padding: 1em;
+            }
+
+            a {
+                display: inline;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 848px) {
+
+    header time {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1rem;
+    }
+
+}
