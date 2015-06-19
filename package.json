@@ -1,0 +1,26 @@
+{
+  "name": "report-react",
+  "version": "0.0.1",
+  "description": "A reporting tool showing off React functionality and syntax",
+  "scripts": {
+    "start": "node server.js",
+    "prestart": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevelopIntelligenceBoulder/report-react.git"
+  },
+  "author": "Kamren Zorgdrager <kamrenz@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/DevelopIntelligenceBoulder/report-react",
+  "devDependencies": {
+    "express": "^4.12.4"
+  },
+  "dependencies": {
+    "classnames": "^2.1.2",
+    "jquery": "^2.1.4",
+    "jquery-mockjax": "^2.0.1",
+    "moment": "^2.10.3",
+    "react": "^0.13.3"
+  }
+}
