@@ -1,0 +1,163 @@
+/**
+ * Creating data mocks for the Report Generator.
+ *   Using mock-jax for mocking jQuery Ajax requests.
+ */
+(function() {
+	'use strict';
+
+	//List of sales reports
+	var mockSalesGET = [{
+    id: 1,
+ 		date: '1-1-2012',
+ 		quantity: '500',
+ 		netSale: '750',
+ 		costOfGoods: '400'
+ 	}, {
+    id: 2,    
+  	date: '2-1-2012',
+ 		quantity: '425',
+ 		netSale: '650',
+ 		costOfGoods: '300'			
+ 	}, {
+    id: 3,    
+  	date: '3-1-2012',
+ 		quantity: '300',
+ 		netSale: '450',
+ 		costOfGoods: '300'
+ 	}, {
+    id: 4,    
+  	date: '4-1-2012',
+ 		quantity: '600',
+ 		netSale: '750',
+ 		costOfGoods: '400'
+ 	}, {
+    id: 5,    
+  	date: '5-1-2012',
+ 		quantity: '100',
+ 		netSale: '250',
+ 		costOfGoods: '175'			
+ 	}, {
+    id: 6,    
+  	date: '6-1-2012',
+ 		quantity: '100',
+ 		netSale: '250',
+ 		costOfGoods: '150' 		 		 	
+ 	}, {
+    id: 7,    
+  	date: '7-1-2012',
+ 		quantity: '425',
+ 		netSale: '750',
+ 		costOfGoods: '400'			
+ 	}, {
+    id: 8,    
+  	date: '8-1-2012',
+ 		quantity: '300',
+ 		netSale: '450',
+ 		costOfGoods: '250'
+ 	}, {
+    id: 9,    
+  	date: '9-1-2012',
+ 		quantity: '650',
+ 		netSale: '850',
+ 		costOfGoods: '650'			
+ 	}, {
+    id: 10,    
+  	date: '10-1-2012',
+ 		quantity: '100',
+ 		netSale: '350',
+ 		costOfGoods: '250'
+ 	}, {
+    id: 11,
+  	date: '11-1-2012',
+ 		quantity: '100',
+ 		netSale: '350',
+ 		costOfGoods: '250' 		 		 	
+ 	}, {
+    id: 12,    
+  	date: '12-1-2012',
+ 		quantity: '300',
+ 		netSale: '450',
+ 		costOfGoods: '250'			
+ 	}, {
+    id: 13,    
+ 		date: '1-1-2013',
+ 		quantity: '300',
+ 		netSale: '550',
+ 		costOfGoods: '350'
+ 	}, {
+    id: 14,    
+  	date: '2-1-2013',
+ 		quantity: '650',
+ 		netSale: '750',
+ 		costOfGoods: '450'			
+ 	}, {
+    id: 15,    
+  	date: '3-1-2013',
+ 		quantity: '300',
+ 		netSale: '450',
+ 		costOfGoods: '250'
+ 	}, {
+    id: 16,    
+  	date: '4-1-2013',
+ 		quantity: '650',
+ 		netSale: '850',
+ 		costOfGoods: '650'
+ 	}, {
+    id: 17,    
+  	date: '5-1-2013',
+ 		quantity: '100',
+ 		netSale: '350',
+ 		costOfGoods: '150'			
+ 	}, {
+    id: 18,    
+  	date: '6-1-2013',
+ 		quantity: '100',
+ 		netSale: '250',
+ 		costOfGoods: '150' 		 		 	
+ 	}, {
+    id: 19,    
+  	date: '7-1-2013',
+ 		quantity: '500',
+ 		netSale: '350',
+ 		costOfGoods: '250'			
+ 	}, {
+    id: 20,    
+  	date: '8-1-2013',
+ 		quantity: '500',
+ 		netSale: '750',
+ 		costOfGoods: '550'
+ 	}, {
+    id: 21,    
+  	date: '9-1-2013',
+ 		quantity: '650',
+ 		netSale: '850',
+ 		costOfGoods: '550'			
+ 	}, {
+    id: 22,    
+  	date: '10-1-2013',
+ 		quantity: '300',
+ 		netSale: '550',
+ 		costOfGoods: '350'
+ 	}, {
+    id: 23,    
+  	date: '11-1-2013',
+ 		quantity: '100',
+ 		netSale: '350',
+ 		costOfGoods: '250' 		 		 	
+ 	}, {
+    id: 24,    
+  	date: '12-1-2013',
+ 		quantity: '150',
+ 		netSale: '450',
+ 		costOfGoods: '150'
+ 	}];	
+
+	//Back-end mock for GET /data/sales
+	$.mockjax({
+		url: '/data/sales',
+		type: 'GET',
+		status: 200,
+		responseText: mockSalesGET
+	});
+
+})();
