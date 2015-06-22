@@ -2,9 +2,9 @@
 	'use strict';
 
 	/**
-	 * Lemonaide Form Component is the component in charge of the Report Form.
+	 * Form Component is the component in charge of the Report Form.
 	 **/
-	DI.App.LemonaideForm = React.createClass({
+	DI.App.Form = React.createClass({
 		/**
 		 * Clears out the form values.
 		 **/
@@ -90,9 +90,7 @@
 						<input type="button"
 							onClick={this.handleClear}
 							value="Clear" />
-
 					</fieldset>
-
 				</form>
 			)
 		}

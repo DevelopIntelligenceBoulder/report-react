@@ -1,9 +1,9 @@
 (function() {
 	/**
-	 * Lemonaide Form Control component.
+	 * Form Control component.
 	 *   Handles the issues events for collapsing and showing the Form Component.
 	 **/
-	DI.App.LemonaideFormControl = React.createClass({
+	DI.App.FormControl = React.createClass({
 		render: function() {
 			return (
 				<h3 className="report-form-control">

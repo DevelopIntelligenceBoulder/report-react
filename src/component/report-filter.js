@@ -2,10 +2,10 @@
 	'use strict';
 
 	/**
-	 *  Lemonaide Report Filter Component handles the filtering of the
+	 *  Report Filter Component handles the filtering of the
 	 *    list of reports.
 	 **/
-	DI.App.LemonaideReportFilter = React.createClass({displayName: "LemonaideReportFilter",
+	DI.App.ReportFilter = React.createClass({displayName: "ReportFilter",
 		/**
 		 * Handle Change event handler.
 		 **/

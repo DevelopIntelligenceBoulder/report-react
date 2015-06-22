@@ -2,9 +2,9 @@
 	'use strict';
 
 	/**
-	 * Lemonaid Container Component is the top-level React component.
+	 * Container Component is the top-level React component.
 	 **/
-	DI.App.LemonaideContainer = React.createClass({
+	DI.App.Container = React.createClass({
 		/**
 		 *  Loads the items from the server
 		 **/
@@ -37,15 +37,16 @@
 		/**
 		 *  When a user submits a report, we need to refresh the list 
 		 *    of reports we are showing with this added report
-		 *  	- Handle this in lemonaide-container because data only flows one
+		 *  	- Handle this in container because data only flows one
 		 *        way. From the top component to the children.
-		 *   	- This callback method is passed into the LemonaideForm for
+		 *   	- This callback method is passed into the Form for
 		 *        later interaction.
 		 **/
 		handleReportSubmit: function(report) {
 			//Optimistic update
 			//	Makes app feel more responsive
 			//	- Won't work well if the save bombed :)
+			report.id = this.state.data.length + 1;
 			var reports = this.state.data;
 			var addedReport = reports.concat([report]);
 			this.setState({data: addedReport});
@@ -84,13 +85,13 @@
 					<h2>Report Information</h2>
 					<p>There are {this.state.data.length} months of retrievable data.</p>
 					<section>
-						<DI.App.LemonaideFormControl 
+						<DI.App.FormControl
 							onExpandControl={this.handleFormExpand} 
 							onCollapseControl={this.handleFormCollapse} />
-						<DI.App.LemonaideForm 
+						<DI.App.Form
 							onReportSubmit={this.handleReportSubmit} 
 							isFormCollapsed={this.state.isFormCollapsed} />
-						<DI.App.LemonaideReportList
+						<DI.App.ReportList
 							data={this.state.data}
 							numberOfReports={this.state.data.length} />
 					</section>
@@ -108,7 +109,7 @@
 	 *  @param element: Element to attach React's rendered elements to
 	 **/
 	React.render(
-		<DI.App.LemonaideContainer url='/data/sales' />,
+		<DI.App.Container url='/data/sales' />,
 	 	document.getElementById('app')
 	);
 

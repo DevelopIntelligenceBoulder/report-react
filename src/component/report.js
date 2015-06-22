@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 
-	DI.App.LemonaideReport = React.createClass({displayName: "LemonaideReport",
+	DI.App.Report = React.createClass({displayName: "Report",
 		/**
 		 * Handle Click event handler
 		 **/
@@ -19,7 +19,7 @@
 			//This Add-On will be deprecated in an upcoming React version
 			// var cx = React.addons.classSet;
 			// var classes = cx({
-			// 	'lemonReportListing': true,
+			// 	'report': true,
 			// 	'odd': this.props.isOddReport
 			// }); 
 
