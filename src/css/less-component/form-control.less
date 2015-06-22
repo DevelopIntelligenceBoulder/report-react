@@ -1,0 +1,36 @@
+// Form component styling
+@import "variable.less";
+
+.report-form-control {
+    font-size: @font-normal;
+
+    button {
+        border: 1px solid #aaa;
+        background-color: @button-secondary;
+        border-radius: 0.4rem;
+        color: @button-secondary-text;
+        width: calc(~'50% - 0.5em');
+    }
+
+    .primary-button {
+        background-color: @button-primary;
+        color: @button-primary-text;
+    }
+
+    button + button {
+        margin-left: 1em;
+    }
+
+    @media only screen and (min-width: @component-large) {
+
+        .control-button-wrapper {
+            display: inline;
+            margin-left: 1em;
+        }
+
+        button {
+            width: 7rem;
+        }
+
+    }
+}

@@ -1,0 +1,70 @@
+// Form component styling
+@import "variable.less";
+
+.report-form {
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+
+    input, select {
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+
+    select {
+        border: 1px solid #ddd;
+        height: 3rem;
+    }
+
+    input[type="submit"], input[type="button"] {
+        border: 1px solid #aaa;
+        background-color:@button-primary;
+        color: @button-primary-text;
+        border-radius: 0.4rem;
+        display: block;
+        margin:1rem auto 0.4rem auto;
+        width: 95%;
+    }
+
+    input[type="button"] {
+        background-color: @button-secondary;
+        color: @button-secondary-text;
+    }
+
+    input[type="submit"].disabled {
+        border-color: red;
+        color: gray;
+    }
+
+    @media only screen and (min-width: @component-large) {
+
+        input, select {
+            display: block;
+            padding: 0.5rem 0;
+            width: 35rem;
+        }
+
+
+        input[type="submit"], input[type="button"] {
+            display: inline-block;
+            width: 17rem;
+        }
+
+        input[type="button"] {
+            margin-left: 1rem;
+        }
+
+    }
+}
+
+
+
+.collapsed {
+    display: none;
+}
+
+.error {
+    color: red;
+}

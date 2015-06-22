@@ -1,0 +1,55 @@
+.report {
+  list-style-type: none;
+  margin: 1rem;
+  text-indent: 0;
+}
+.report.odd p {
+  background-color: #ffa500;
+}
+.report.odd footer {
+  background-color: #cc8400;
+}
+.report.selected {
+  border-radius: 0;
+  box-shadow: 1px 1px 1px 1px #cccccc;
+}
+.report.selected header {
+  border-radius: 0;
+}
+.report.selected footer {
+  border-radius: 0;
+}
+.report header {
+  background-color: #21528a;
+  border: 1px solid #cccccc;
+  border-bottom: none;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.report p {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin: 0;
+  padding: 0.5rem;
+}
+.report footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #cccccc;
+  border-top: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.2rem;
+}
+.report footer p {
+  margin: 0.5rem;
+}
+@media screen and (min-width: 41rem) {
+  .report {
+    display: inline-block;
+    margin: 1rem;
+    width: 15rem;
+  }
+}

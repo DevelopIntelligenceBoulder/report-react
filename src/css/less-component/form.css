@@ -1,0 +1,54 @@
+.report-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.report-form input,
+.report-form select {
+  padding: 0.5rem 0;
+  width: 100%;
+}
+.report-form select {
+  border: 1px solid #ddd;
+  height: 3rem;
+}
+.report-form input[type="submit"],
+.report-form input[type="button"] {
+  border: 1px solid #aaa;
+  background-color: #173a61;
+  color: #ffffff;
+  border-radius: 0.4rem;
+  display: block;
+  margin: 1rem auto 0.4rem auto;
+  width: 95%;
+}
+.report-form input[type="button"] {
+  background-color: #eeeeee;
+  color: #555555;
+}
+.report-form input[type="submit"].disabled {
+  border-color: red;
+  color: gray;
+}
+@media only screen and (min-width: 41rem) {
+  .report-form input,
+  .report-form select {
+    display: block;
+    padding: 0.5rem 0;
+    width: 35rem;
+  }
+  .report-form input[type="submit"],
+  .report-form input[type="button"] {
+    display: inline-block;
+    width: 17rem;
+  }
+  .report-form input[type="button"] {
+    margin-left: 1rem;
+  }
+}
+.collapsed {
+  display: none;
+}
+.error {
+  color: red;
+}
