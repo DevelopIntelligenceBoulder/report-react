@@ -38,7 +38,8 @@
 			var PROFITABLILTY_BREAK_POINT = 200;
 
 			var grossProfit = this.props.netSale - this.props.costOfGoods;
-			var isProfitable = grossProfit > PROFITABLILTY_BREAK_POINT ? true : false;
+			//grossProfit > PROFITABLILTY_BREAK_POINT ? true : false
+			var isProfitable = grossProfit > PROFITABLILTY_BREAK_POINT;
 			var image;
 
 			//Using Moment JS for date formatting
