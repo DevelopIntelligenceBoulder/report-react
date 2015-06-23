@@ -1,4 +1,6 @@
 (function() {
+	'use strict';
+
 	/**
 	 * Form Control component.
 	 *   Handles the issues events for collapsing and showing the Form Component.
