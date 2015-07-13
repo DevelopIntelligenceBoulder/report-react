@@ -25,7 +25,7 @@
         render: function() {
             //Rendered HTML
             return (
-                <header>
+                <header className="title">
                     <h1>Reporting <span className="sub-title">Ohh yeah it can be fun!</span>
 			        </h1>
                     <time dateTime={this.state.dateTime}>{this.state.dateHuman}</time>

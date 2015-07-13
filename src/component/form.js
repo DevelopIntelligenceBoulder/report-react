@@ -64,7 +64,7 @@
 						React.createElement("label", {htmlFor: "reportDate"}, "Report Date:"), 
 						React.createElement("input", {type: "text", 
 							id: "reportDate", 
-							placeholder: "Report Date (i.e. 01-01-2015)", 
+							placeholder: "Report Date (i.e. 10-01-2015)", 
 							ref: "reportDate"}), 
 
 						React.createElement("label", {htmlFor: "quantity"}, "Quantity:"), 

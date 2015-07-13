@@ -3,6 +3,11 @@
 
 .report-form-control {
     font-size: @font-normal;
+    margin-bottom: 1rem;
+
+    h3 {
+        margin-bottom: 0;
+    }
 
     button {
         border: 1px solid #aaa;
@@ -22,6 +27,9 @@
     }
 
     @media only screen and (min-width: @component-large) {
+        h3 {
+            display: inline-block;
+        }
 
         .control-button-wrapper {
             display: inline;

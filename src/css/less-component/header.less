@@ -2,7 +2,7 @@
 @import "font.less";
 
 /* Header rules */
-header {
+.title {
     .embeddedFont;
     background-color: @brand-primary;
     border-bottom: 1px solid @brand-primary;
@@ -35,7 +35,7 @@ header {
 }
 
 @media screen and (min-width: 37rem) {
-    header {
+    .title {
 
         .sub-title {
             display: inline;
@@ -48,7 +48,7 @@ header {
 
 @media screen and (min-width: 53rem) {
 
-    header time {
+    .title time {
         position: absolute;
         top: 1rem;
         right: 1rem;

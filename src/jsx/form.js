@@ -64,7 +64,7 @@
 						<label htmlFor="reportDate">Report Date:</label>
 						<input type="text"
 							id="reportDate"
-							placeholder="Report Date (i.e. 01-01-2015)"
+							placeholder="Report Date (i.e. 10-01-2015)"
 							ref="reportDate" />
 
 						<label htmlFor="quantity">Quantity:</label>

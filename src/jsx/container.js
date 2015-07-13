@@ -46,6 +46,7 @@
 			//Optimistic update
 			//	Makes app feel more responsive
 			//	- Won't work well if the save bombed :)
+			//To make this fully functioning add Ajax save to back-end
 			report.id = this.state.data.length + 1;
 			var reports = this.state.data;
 			var addedReport = reports.concat([report]);
