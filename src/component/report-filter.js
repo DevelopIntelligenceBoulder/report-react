@@ -23,7 +23,7 @@
 		 **/
 		render: function() {
 			return (
-				React.createElement("p", {className: "reportFilter"}, 
+				React.createElement("p", {className: "report-filter"}, 
 			  		"How many months of the ", this.props.numberOfReports, " would you like to see? ", React.createElement("input", {onChange: this.handleChange, type: "number", id: "numOfRows", ref: "numOfRows"})
 			  	)
 			)

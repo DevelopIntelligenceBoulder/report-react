@@ -72,7 +72,7 @@
 					React.createElement(DI.App.ReportFilter, {
 						numberOfReports: this.props.numberOfReports, 
 						onChangedFilterLimit: this.handleChangedFilterLimit}), 
-					React.createElement("ul", {className: "reportListing"}, reportNodes)
+					React.createElement("ul", {className: "report-listing"}, reportNodes)
 				)
 			)
 		}

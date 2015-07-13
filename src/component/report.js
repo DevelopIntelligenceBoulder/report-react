@@ -54,7 +54,7 @@
 
 			return (
 				React.createElement("li", {className: classes, onClick: this.handleClick}, 
-				React.createElement("section", {"ng-click": "showSelected()"}, 
+				React.createElement("section", null, 
 					React.createElement("header", null, date), 
 					React.createElement("p", null, 
 						"Quantity: ", this.props.quantity, React.createElement("br", null), 
