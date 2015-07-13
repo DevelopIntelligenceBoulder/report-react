@@ -23,3 +23,6 @@ If you are going to change any of the [JSX](https://jsx.github.io/) files they w
     * The JSX compiler will compile the JSX code into JavaScript the React will consume
     * The first parameter `jsx/` is where the JavaScript utilizing JSX is written
     * The second parameter `component/` is where the compiled JavaScript will be placed
+    
+## Where is the data coming from?
+This reporting tool is using mocked back-end data via [jQuery Mockjax](https://github.com/jakerella/jquery-mockjax). It allows us to intercept jQuery Ajax calls going to the backend. Look at `src/mock/mock-items.js` to see the mock data.
