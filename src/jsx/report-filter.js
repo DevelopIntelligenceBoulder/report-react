@@ -23,7 +23,7 @@
 		 **/
 		render: function() {
 			return (
-				<p className="reportFilter">
+				<p className="report-filter">
 			  		How many months of the {this.props.numberOfReports} would you like to see? <input onChange={this.handleChange} type="number" id="numOfRows" ref="numOfRows" />
 			  	</p>
 			)

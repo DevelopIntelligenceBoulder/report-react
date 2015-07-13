@@ -72,7 +72,7 @@
 					<DI.App.ReportFilter
 						numberOfReports={this.props.numberOfReports} 
 						onChangedFilterLimit = {this.handleChangedFilterLimit}/>
-					<ul className="reportListing">{reportNodes}</ul>
+					<ul className="report-listing">{reportNodes}</ul>
 				</section>
 			)
 		}

@@ -86,7 +86,7 @@
 							ref="costOfGoods" />
 
 						<input type="submit"
-							value ="Submit Report"/>
+							value ="Submit Report" />
 						<input type="button"
 							onClick={this.handleClear}
 							value="Clear" />

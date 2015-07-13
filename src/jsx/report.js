@@ -54,7 +54,7 @@
 
 			return (
 				<li className={classes} onClick={this.handleClick}>
-				<section ng-click="showSelected()">
+				<section>
 					<header>{date}</header>
 					<p>
 						Quantity: {this.props.quantity}<br/>

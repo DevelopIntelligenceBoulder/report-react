@@ -127,20 +127,20 @@ header time {
 .error {
   color: red;
 }
-.reportFilter input[type="number"] {
+.report-filter input[type="number"] {
   text-align: center;
   width: 5rem;
 }
 @media only screen and (min-width: 41em) {
-  .reportFilter .control-button-wrapper {
+  .report-filter .control-button-wrapper {
     display: inline;
     margin-left: 1rem;
   }
-  .reportFilter button {
+  .report-filter button {
     width: 7rem;
   }
 }
-.reportListing {
+.report-listing {
   padding: 0;
 }
 .report {
