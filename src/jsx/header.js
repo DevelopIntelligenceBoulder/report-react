@@ -35,16 +35,4 @@
 
     });
 
-    /**
-     * Only render the top level component
-     *	React will then handle rendering the children
-     *  Data coming from a back-end
-     *  @param url: Hitting /data/sales
-     *  @param element: Element to attach React's rendered elements to
-     **/
-    React.render(
-        <DI.App.Header />,
-        document.getElementById('header')
-    );
-
 })();
