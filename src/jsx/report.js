@@ -43,7 +43,7 @@
 			var image;
 
 			//Using Moment JS for date formatting
-			var date = moment(new Date(this.props.date)).format('MMM Do, YYYY');
+			var date = moment(new Date(this.props.date)).format('MMM D, YYYY').toUpperCase();
 
 			//Can't do if/else within JSX
 			// - https://facebook.github.io/react/tips/if-else-in-JSX.html
