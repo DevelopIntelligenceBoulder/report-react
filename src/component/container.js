@@ -62,7 +62,7 @@
 			//Initially default this data to empty
 			return {
 				data: [],
-				isFormCollapsed: false
+				isFormCollapsed: true
 			};
 		},
 		/** 
@@ -101,17 +101,5 @@
 		}
 
 	});
-
-	/**
-	 * Only render the top level component
-	 *	React will then handle rendering the children
-	 *  Data coming from a back-end
-	 *  @param url: Hitting /data/sales 
-	 *  @param element: Element to attach React's rendered elements to
-	 **/
-	React.render(
-		React.createElement(DI.App.Container, {url: "/data/sales"}),
-	 	document.getElementById('app')
-	);
 
 })();
