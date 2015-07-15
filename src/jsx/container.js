@@ -23,18 +23,6 @@
 			});
 		},
 		/**
-		 *  Handle the expanding of the report form.
-		 **/
-		handleFormExpand: function() {
-			this.setState({isFormCollapsed: false});
-		},
-		/**
-		 *  Handle the collapsing of the report form.
-		 **/
-		handleFormCollapse: function() {
-			this.setState({isFormCollapsed: true});
-		},
-		/**
 		 *  When a user submits a report, we need to refresh the list 
 		 *    of reports we are showing with this added report
 		 *  	- Handle this in container because data only flows one
@@ -55,14 +43,13 @@
 		/** 
 		 *  React component lifecycle callback.
 		 *    - Executes exactly once during the lifecycle of the
-		 *      compoenet and sets the initial state of the component
+		 *      component and sets the initial state of the component
 		 *    - Executes before the component has been drawn on screen
 		 **/
 		getInitialState: function() {
 			//Initially default this data to empty
 			return {
-				data: [],
-				isFormCollapsed: true
+				data: []
 			};
 		},
 		/** 
@@ -86,12 +73,7 @@
 					<h2>Report Information</h2>
 					<p>There are {this.state.data.length} months of retrievable data.</p>
 					<section>
-						<DI.App.FormControl
-							onExpandControl={this.handleFormExpand} 
-							onCollapseControl={this.handleFormCollapse} />
-						<DI.App.Form
-							onReportSubmit={this.handleReportSubmit} 
-							isFormCollapsed={this.state.isFormCollapsed} />
+						<DI.App.FormContainer />
 						<DI.App.ReportList
 							data={this.state.data}
 							numberOfReports={this.state.data.length} />

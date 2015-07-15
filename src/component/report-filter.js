@@ -22,9 +22,14 @@
 		 * React component lifecycle callback.
 		 **/
 		render: function() {
+			//"defaultValue" allows us to specify a starting value that will be overwritten
+			//  - Can be set with a props value
+			//If we tried to set the "value" the input would never change because props
+			//  don't change :(
+			//By setting no "value" the input is changed to whatever the user enters
 			return (
 				React.createElement("p", {className: "report-filter"}, 
-			  		"How many months of the ", this.props.numberOfReports, " would you like to see? ", React.createElement("input", {onChange: this.handleChange, type: "number", id: "numOfRows", ref: "numOfRows"})
+			  		"How many months of the ", this.props.numberOfReports, " would you like to see? ", React.createElement("input", {onChange: this.handleChange, type: "number", defaultValue: this.props.reportsToShow - 1, id: "numOfRows", ref: "numOfRows"})
 			  	)
 			)
 		}
