@@ -62,8 +62,7 @@
 						isOddReport = {isOddReport}
 						goodImage = {goodImage}
 						isSelected = {isSelected}						
-						onReportSelect = {this.handleReportSelected}>
-					</DI.App.Report>
+						onReportSelect = {this.handleReportSelected} />
 				);
 			}.bind(this));
 			//Rendered HTML
