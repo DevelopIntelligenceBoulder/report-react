@@ -26,7 +26,7 @@
             //Rendered HTML
             return (
                 React.createElement("header", {className: "title"}, 
-                    React.createElement("h1", null, "Reporting ", React.createElement("span", {className: "sub-title"}, "Ohh yeah it can be fun!")
+                    React.createElement("h1", null, "React Reporting ", React.createElement("span", {className: "sub-title"}, "Ohh yeah it can be fun!")
 			        ), 
                     React.createElement("time", {dateTime: this.state.dateTime}, this.state.dateHuman)
                 )

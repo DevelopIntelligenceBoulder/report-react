@@ -26,7 +26,7 @@
             //Rendered HTML
             return (
                 <header className="title">
-                    <h1>Reporting <span className="sub-title">Ohh yeah it can be fun!</span>
+                    <h1>React Reporting <span className="sub-title">Ohh yeah it can be fun!</span>
 			        </h1>
                     <time dateTime={this.state.dateTime}>{this.state.dateHuman}</time>
                 </header>
