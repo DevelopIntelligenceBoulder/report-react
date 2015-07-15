@@ -40,8 +40,7 @@
 			//Need to filter nodes. 
 			//	- Slice does not mutate the underlying array
 			//	- Slice simply copies off the number of indices desired
-			//	- Offset by 1 for slicing
-			var filteredNodes = this.props.data.slice(1, this.state.reportsToShow + 1);
+			var filteredNodes = this.props.data.slice(0, this.state.reportsToShow);
 			var reportNodes = filteredNodes.map(function(report) {
 				//Icon-fonts for font-awesome
 				var URL = [
