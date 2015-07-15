@@ -34,7 +34,7 @@
                         onToggleControl: this.handleFormToggle, 
                         isFormCollapsed: this.state.isFormCollapsed}), 
                     React.createElement(DI.App.Form, {
-                        onReportSubmit: this.handleReportSubmit, 
+                        onReportSubmit: this.props.onReportSubmit, 
                         isFormCollapsed: this.state.isFormCollapsed})
                 )
             )

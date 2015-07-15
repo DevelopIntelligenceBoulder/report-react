@@ -73,7 +73,8 @@
 					React.createElement("h2", null, "Report Information"), 
 					React.createElement("p", null, "There are ", this.state.data.length, " months of retrievable data."), 
 					React.createElement("section", null, 
-						React.createElement(DI.App.FormContainer, null), 
+						React.createElement(DI.App.FormContainer, {
+							onReportSubmit: this.handleReportSubmit}), 
 						React.createElement(DI.App.ReportList, {
 							data: this.state.data, 
 							numberOfReports: this.state.data.length})

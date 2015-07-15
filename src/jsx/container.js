@@ -73,7 +73,8 @@
 					<h2>Report Information</h2>
 					<p>There are {this.state.data.length} months of retrievable data.</p>
 					<section>
-						<DI.App.FormContainer />
+						<DI.App.FormContainer
+							onReportSubmit={this.handleReportSubmit}/>
 						<DI.App.ReportList
 							data={this.state.data}
 							numberOfReports={this.state.data.length} />

@@ -11,7 +11,7 @@
 		getInitialState: function() {
 			return {
 				selected: 0,
-				reportsToShow: 5
+				reportsToShow: 4
 			};
 		},
 		/**
@@ -20,15 +20,13 @@
 		 **/
 		handleReportSelected: function(id) {
 			this.setState({selected: id});
-			console.log('handleReportSelected');
 		},
 		/**
 		 * Handle Changed Filter Limit event handler.
 		 **/
 		handleChangedFilterLimit: function(data) {
-			var reportsToShow = Number(data.reportsToShow) + 1;
+			var reportsToShow = Number(data.reportsToShow);
 			this.setState({reportsToShow: reportsToShow});
-			console.log('handleChangedFilterLimit');
 		},
 		/**
 		 * React component lifecycle callback.
@@ -42,7 +40,8 @@
 			//Need to filter nodes. 
 			//	- Slice does not mutate the underlying array
 			//	- Slice simply copies off the number of indices desired
-			var filteredNodes = this.props.data.slice(1, this.state.reportsToShow);
+			//	- Offset by 1 for slicing
+			var filteredNodes = this.props.data.slice(1, this.state.reportsToShow + 1);
 			var reportNodes = filteredNodes.map(function(report) {
 				//Icon-fonts for font-awesome
 				var URL = [

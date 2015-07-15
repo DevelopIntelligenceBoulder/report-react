@@ -29,7 +29,7 @@
 			//By setting no "value" the input is changed to whatever the user enters
 			return (
 				<p className="report-filter">
-			  		How many months of the {this.props.numberOfReports} would you like to see? <input onChange={this.handleChange} type="number" defaultValue={this.props.reportsToShow - 1} id="numOfRows" ref="numOfRows" />
+			  		How many months of the {this.props.numberOfReports} would you like to see? <input onChange={this.handleChange} type="number" defaultValue={this.props.reportsToShow} id="numOfRows" ref="numOfRows" />
 			  	</p>
 			)
 		}
